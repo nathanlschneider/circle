@@ -1,0 +1,33 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 200vh;
+  background-color: rgb(100, calc(var(--scroll) * 75), calc(var(--scroll) * 100));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.spin {
+  -webkit-transform: rotate(calc(var(--scroll) * 900deg));
+      -ms-transform: rotate(calc(var(--scroll) * 900deg));
+          transform: rotate(calc(var(--scroll) * 900deg));
+  border: 20px solid #00000088;
+  width: 200px;
+  height: 200px;
+  border-left: 20px solid #00000033;
+  position: fixed;
+  top: 0;
+  border-radius: 50%;
+  top: calc(50vh - 150px);
+}
